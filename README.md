@@ -1,2 +1,2 @@
 # DotNet
-RFP related
+All .Net projects that are Bridlelabz RFP related are present in this folder

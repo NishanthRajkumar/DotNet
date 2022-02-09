@@ -10,7 +10,8 @@ namespace EmployeeApp
             //DailyWage.EmpWage();
             //PartTime.PartTimeEmpWage();
             //WageUsingCase.EmpWageUsingSwitch();
-            CalculateWageForMonth.CalculateWagesFor20DaysInMonth();
+            //CalculateWageForMonth.CalculateWagesFor20DaysInMonth();
+            WageCondition.CalculateWageTill100HrsOr20IsReached();
         }
     }
 }

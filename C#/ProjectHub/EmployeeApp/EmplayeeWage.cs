@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeWageApp;
+namespace EmployeeApp;
 
 internal class EmployeeWage
 {
@@ -13,30 +13,48 @@ internal class EmployeeWage
     const int IS_PART_TIME = 0;
     const int IS_PRESENT = 1;
     const int IS_ABSENT = 0;
-    const int RATE_PER_HOUR = 20;
-    const int WORKING_DAYS_PER_MONTH = 20;
 
     // Attributes of the class declared here
-    int totalDaysWorked;
-    int monthlyWage;
-    int totalHoursWorked;
+    private int totalDaysWorked;
+    private int totalHoursWorked;
+    private string company;
+    private int empRatePerHour;
+    private int numOfWorkingDays;
+    private int maxHoursPerMonth;
+    private int totalEmpWage;
 
     // Random object declared
     static Random random = new Random();
 
     // Constructor
+    public EmployeeWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
+    {
+        totalDaysWorked = 0;
+        totalEmpWage = 0;
+        totalHoursWorked = 0;
+        this.company = company;
+        this.empRatePerHour = empRatePerHour;
+        this.numOfWorkingDays = numOfWorkingDays;
+        this.maxHoursPerMonth = maxHoursPerMonth;
+    }
+
+    // Default Constructor
     public EmployeeWage()
     {
         totalDaysWorked = 0;
-        monthlyWage = 0;
+        totalEmpWage = 0;
         totalHoursWorked = 0;
+        company = "NA";
+        empRatePerHour = 20;
+        numOfWorkingDays = 20;
+        maxHoursPerMonth = 100;
     }
 
     // Resets class attributes to default values given in constructor
     public void Reset()
     {
         totalDaysWorked = 0;
-        monthlyWage = 0;
+        totalEmpWage = 0;
         totalHoursWorked = 0;
     }
 
@@ -69,23 +87,23 @@ internal class EmployeeWage
                 break;
         }
         totalHoursWorked += dailyHours;
-        dailyWage = dailyHours * RATE_PER_HOUR;
+        dailyWage = dailyHours * empRatePerHour;
         return dailyWage;
     }
 
     // Gets monthly wage after checkking attendance for the working days
     public void MonthlyWage()
     {
-        for (int i = 0; i < WORKING_DAYS_PER_MONTH; i++)
+        for (int i = 0; i < numOfWorkingDays; i++)
             totalDaysWorked += GetAttendance();
         for (int j = 0; j < totalDaysWorked; j++)
-            monthlyWage += GetDailyWage();
+            totalEmpWage += GetDailyWage();
     }
 
     // Until total hours reaches 100 or total days = 20
     public void MeetWageCondition()
     {
-        while (totalDaysWorked != 20 && totalHoursWorked < 100)
+        while (totalDaysWorked != numOfWorkingDays && totalHoursWorked < maxHoursPerMonth)
         {
             Reset();
             MonthlyWage();
@@ -95,8 +113,9 @@ internal class EmployeeWage
     // Displays the values of the class atributes at the time this method is called
     public void Display()
     {
+        Console.WriteLine("Company name: " + company);
         Console.WriteLine("Total Hours worked: " + totalHoursWorked);
         Console.WriteLine("Total Days worked: " + totalDaysWorked);
-        Console.WriteLine("Monthly Wage: " + monthlyWage);
+        Console.WriteLine("Monthly Wage: " + totalEmpWage);
     }
 }

@@ -9,7 +9,7 @@
   </li>
   <ul>
     <li>
-      Then cannot creat object of that class without giving parameters
+      Then cannot create object of that class without giving parameters
     </li>
     <li>
       The default constructor provided by C# for any class is not valid here, since we overloaded the constructor

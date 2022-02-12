@@ -8,7 +8,7 @@ namespace ConceptTesting.StaticTests;
 
 internal class StaticTest
 {
-    public static void ConstructorTest()
+    public static void ConstructorTesting()
     {
         //ConstructorTest test = new ConstructorTest();
         /* The above statement produces error.

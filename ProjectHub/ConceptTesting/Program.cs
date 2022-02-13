@@ -2,6 +2,7 @@
 
 Console.Title = "Concept Testing App";
 
-StaticTest.ConstructorTesting();
+//StaticTest.ConstructorTesting();
+StaticTest.TestStaticClass();
 
 Console.ReadKey();

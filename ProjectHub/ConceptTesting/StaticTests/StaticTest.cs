@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ConceptTesting.StaticTests;
 
-namespace ConceptTesting.StaticTests;
-
-internal class StaticTest
+internal static class StaticTest
 {
     public static void ConstructorTesting()
     {
@@ -22,10 +16,18 @@ internal class StaticTest
 
         // Testing if class attributes are initialized at objrct new() allocation
         Console.WriteLine("Creating first ConstructorTest object");
-        test = new ConstructorTest(1, 2);
+        test = new(1, 2);
 
         //Testing If static Constructor is called again...
         Console.WriteLine("Creating first ConstructorTest object");
         ConstructorTest test2 = new ConstructorTest(2, 3);
+    }
+
+    public static void TestStaticClass()
+    {
+        Console.WriteLine("Calling static method using class name....");
+        StaticClassTest.StaticMethod();
+        Console.WriteLine("Calling static method using class name....");
+        StaticClassTest.StaticMethod();
     }
 }

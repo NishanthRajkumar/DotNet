@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConceptTesting.StaticTests;
+﻿namespace ConceptTesting.StaticTests;
 
 
 //Put break point on the line of the static attribut declaration to test execution order of static

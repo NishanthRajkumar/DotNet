@@ -10,3 +10,5 @@
   - `static` constructor is executed after that
   - Now non-Static attribute declarations are executed
   - finally the _default_ constructor or _overloaded_ constructor
+<br></br>
+- _**__Note__**: Please put break point on the line of the static attribute declaration to test execution order of static_

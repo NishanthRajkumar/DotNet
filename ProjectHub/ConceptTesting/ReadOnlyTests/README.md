@@ -1,10 +1,10 @@
 ## Readonly tests
 ### Readonly attribute test observations
-- Purpose of the test:
+- _Purpose of the test_:
   - from the general outlook and output perspective, `constant` and `readonly` work the same way.
   - Then why the the need for readonly?
   - This test compares the observation of `readonly` with what we know about `constant`
-- `readonly` vs `constant`:
+- _`readonly` vs `constant`_:
   - `constant` must be assigned value at declaration. But `readonly` value can be set at constructor as well
   - According to online docs: `constant` value is set at compile time, but `readonly` can be set at runtime.
     - Visual studio allowed me to place break point on the line with `readonly` attribute

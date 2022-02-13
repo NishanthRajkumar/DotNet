@@ -2,7 +2,8 @@
 
 namespace SnakeAndLadderApp;
 
-internal class MultiPlayer
+// Multiplayer Initialization and setup
+internal static class MultiPlayer
 {
     // Initializes the player and starts the game
     public static void Start()

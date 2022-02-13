@@ -1,5 +1,4 @@
 ﻿using ConceptTesting.ReadOnlyTests;
-using ConceptTesting.StaticTests;
 
 Console.Title = "Concept Testing App";
 

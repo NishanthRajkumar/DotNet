@@ -1,7 +1,9 @@
 ﻿namespace ConceptTesting.StaticTests;
 
+// Performs various types of static related tests
 internal static class StaticTest
 {
+    // Tests the static constructor concepts
     public static void ConstructorTesting()
     {
         //ConstructorTest test = new ConstructorTest();
@@ -23,6 +25,7 @@ internal static class StaticTest
         ConstructorTest test2 = new ConstructorTest(2, 3);
     }
 
+    // Tests the static class concepts
     public static void TestStaticClass()
     {
         Console.WriteLine("Calling static method using class name....");

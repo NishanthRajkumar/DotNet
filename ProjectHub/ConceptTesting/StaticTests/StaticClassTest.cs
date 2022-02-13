@@ -1,6 +1,7 @@
 ﻿namespace ConceptTesting.StaticTests;
 
-internal class StaticClassTest
+// This class is used for testing static classes
+internal static class StaticClassTest
 {
     private static int num = 0;
 

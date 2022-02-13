@@ -3,8 +3,10 @@
 
 namespace GeometryLine;
 
-internal class ComparisonModel
+// Provides different styles of line comparison models
+internal static class ComparisonModel
 {
+    // Two line comparison model
     public static void TwoLines()
     {
         // Create 2 Line objects
@@ -42,7 +44,7 @@ internal class ComparisonModel
         }
     }
 
-    //
+    //Multi line comparison model
     public static void MultiLine()
     {
         List<Line> lines = new List<Line>();

@@ -14,7 +14,7 @@
   - Output is just .DLL file
   - This is a common Library for all the projects in this Solution
   - Contains class files that serve general purposes needed by many projects
-- **Snake & Ladder App**
+- **_Snake & Ladder App_**
   - C# .Net 6.0 Console Application
   - Simulates the well renowned board game
   - Was part of _RFP Assignments_. Now Imported and modified code for self-study learning purposes

@@ -1,0 +1,2 @@
+﻿2022-02-15 09:07:29.2041|ERROR|NLogDemo.NLog|Expecting null values
+2022-02-15 19:18:36.8291|ERROR|NLogDemo.NLog|Expecting null values

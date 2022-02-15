@@ -14,5 +14,6 @@ obj.addCompanyEmpWage("SpaceX", 175, 20, 100);
 obj.addCompanyEmpWage("Tesla", 175, 20, 100);
 obj.addCompanyEmpWage("L&T", 175, 20, 100);
 
+obj.computeEmpWage();
 
 Console.ReadKey();

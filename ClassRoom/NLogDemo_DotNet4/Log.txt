@@ -1,0 +1,1 @@
+﻿2022-02-15 20:22:47.2344|ERROR|NLogDemo_DotNet4.NLog|Expecting null values

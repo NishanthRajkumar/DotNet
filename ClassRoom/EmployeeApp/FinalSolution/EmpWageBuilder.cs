@@ -16,14 +16,14 @@
             this.companyEmpWagesList = new LinkedList<CompanyEmpWage>();
             this.companyToEmpWageMap = new Dictionary<string, CompanyEmpWage>();
         }
-        public void addCompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMnth)
+        public void AddCompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMnth)
         {
             CompanyEmpWage companyEmpWage = new CompanyEmpWage(company, empRatePerHour, numOfWorkingDays, maxHoursPerMnth);
             this.companyEmpWagesList.AddLast(companyEmpWage);
             this.companyToEmpWageMap.Add(company, companyEmpWage);
         }
 
-        public void computeEmpWage()
+        public void ComputeEmpWage()
         {
             foreach (var companyEmpWage in this.companyEmpWagesList)
             {
@@ -62,7 +62,7 @@
             return totalEmpHrs * companyEmpWage.empRatePerHour;
         }
 
-        public int getTotalWage(string company)
+        public int GetTotalWage(string company)
         {
             return this.companyToEmpWageMap[company].totalEmpWage;
         }

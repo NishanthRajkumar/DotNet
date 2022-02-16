@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLogDemo", "NLogDemo\NLogDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLogDemo_DotNet4", "NLogDemo_DotNet4\NLogDemo_DotNet4.csproj", "{7BA39B96-DB8F-4905-B1D1-DDA12DC6D1CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsDemo", "GenericsDemo\GenericsDemo.csproj", "{B5F5107E-A3C9-42B3-9E7D-105FBB0E2C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMaxNumber", "FindMaxNumber\FindMaxNumber.csproj", "{4563FB60-9CAC-4CDB-B4D9-2BC89800395B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{7BA39B96-DB8F-4905-B1D1-DDA12DC6D1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BA39B96-DB8F-4905-B1D1-DDA12DC6D1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BA39B96-DB8F-4905-B1D1-DDA12DC6D1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F5107E-A3C9-42B3-9E7D-105FBB0E2C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F5107E-A3C9-42B3-9E7D-105FBB0E2C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F5107E-A3C9-42B3-9E7D-105FBB0E2C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F5107E-A3C9-42B3-9E7D-105FBB0E2C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4563FB60-9CAC-4CDB-B4D9-2BC89800395B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4563FB60-9CAC-4CDB-B4D9-2BC89800395B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4563FB60-9CAC-4CDB-B4D9-2BC89800395B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4563FB60-9CAC-4CDB-B4D9-2BC89800395B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

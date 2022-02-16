@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EmployeeApp.UseCase10;
+﻿namespace EmployeeApp.UseCase10;
 
 internal class CompanyEmpWage
 {

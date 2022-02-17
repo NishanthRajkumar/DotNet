@@ -1,15 +1,19 @@
 ﻿using GenericsDemo;
-using System.Collections.Generic;
 
 Console.WriteLine("Hello, World!");
 int[] intArray = { 1, 2, 3, 4, 5 };
-double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
+double[] doubleArray = { 1.1, 2.2, 6.6, 3.3, 4.4 };
 char[] charArray = { 'H', 'E', 'L', 'L', 'O' };
 
-/*GenericsClass.toPrint(intArray);
-GenericsClass.toPrint(doubleArray);
-GenericsClass.toPrint(charArray);*/
+/*GenericsClass.ToPrint(intArray);
+GenericsClass.ToPrint(doubleArray);
+GenericsClass.ToPrint(charArray);*/
 
-GenericsMethods.toPrint<int>(intArray);
-GenericsMethods.toPrint<double>(doubleArray);
-GenericsMethods.toPrint<char>(charArray);
+GenericsMethods.ToPrint<int>(intArray);
+GenericsMethods.ToPrint<double>(doubleArray);
+GenericsMethods.ToPrint<char>(charArray);
+
+GenericClassMaximum<int> intGeneric = new(intArray);
+GenericClassMaximum<double> doubleGeneric = new(doubleArray);
+intGeneric.PrintMaxValue();
+doubleGeneric.PrintMaxValue();

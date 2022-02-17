@@ -1,5 +1,4 @@
 ﻿using EmployeeApp.UseCase10;
-using EmployeeApp;
 
 Console.Title = "Employee App";
 Console.WriteLine("-----------------Employee Wage Calculation App-----------------");

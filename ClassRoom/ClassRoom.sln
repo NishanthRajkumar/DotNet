@@ -19,13 +19,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueLinkedList", "QueueLin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackLinkedList", "StackLinkedList\StackLinkedList.csproj", "{752A8FFC-F4A6-4BD7-896B-572A15820C55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateDemo", "DelegateDemo\DelegateDemo.csproj", "{A2110A05-E872-4E9A-9869-7D49A26C50AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateDemo", "DelegateDemo\DelegateDemo.csproj", "{A2110A05-E872-4E9A-9869-7D49A26C50AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsDemo", "EventsDemo\EventsDemo.csproj", "{FA9D540F-5EE6-4C9E-B4D6-2B7EFACB7BF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsDemo", "EventsDemo\EventsDemo.csproj", "{FA9D540F-5EE6-4C9E-B4D6-2B7EFACB7BF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTableDemo", "HashTableDemo\HashTableDemo.csproj", "{FF2EF247-5B52-4C60-B351-79A8A7E84812}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTableDemo", "HashTableDemo\HashTableDemo.csproj", "{FF2EF247-5B52-4C60-B351-79A8A7E84812}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree.csproj", "{D39C0157-A369-4057-993B-19DEA7D51DB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree.csproj", "{D39C0157-A369-4057-993B-19DEA7D51DB0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegExApp", "RegExApp\RegExApp.csproj", "{AE279E80-2FD1-4E2F-BFC7-37159B717AD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTestApp", "MSTestApp\MSTestApp.csproj", "{41F74BEF-7F3A-469E-B09A-A1BD91065175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest1", "UnitTest1\UnitTest1.csproj", "{0E96D63E-C455-480A-A919-33C7811207BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +87,18 @@ Global
 		{D39C0157-A369-4057-993B-19DEA7D51DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D39C0157-A369-4057-993B-19DEA7D51DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D39C0157-A369-4057-993B-19DEA7D51DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE279E80-2FD1-4E2F-BFC7-37159B717AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE279E80-2FD1-4E2F-BFC7-37159B717AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE279E80-2FD1-4E2F-BFC7-37159B717AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE279E80-2FD1-4E2F-BFC7-37159B717AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F74BEF-7F3A-469E-B09A-A1BD91065175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F74BEF-7F3A-469E-B09A-A1BD91065175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F74BEF-7F3A-469E-B09A-A1BD91065175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F74BEF-7F3A-469E-B09A-A1BD91065175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E96D63E-C455-480A-A919-33C7811207BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E96D63E-C455-480A-A919-33C7811207BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E96D63E-C455-480A-A919-33C7811207BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E96D63E-C455-480A-A919-33C7811207BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

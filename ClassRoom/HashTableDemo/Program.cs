@@ -30,5 +30,11 @@ class Program
         ht.Add(14.0, "Value");
         ht.Add(14, 135.789);*/
 
+        /*Hashtable hashtable = new Hashtable(2);
+
+        hashtable.Add("a", 1);
+        //hashtable.Add("b", 2);
+        //hashtable.Add("c", 3);
+        Console.ReadKey();*/
     }
 }

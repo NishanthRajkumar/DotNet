@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DelegateDemo;
+﻿namespace DelegateDemo;
 
 class MulticastDelegate
 {
@@ -17,6 +11,7 @@ class MulticastDelegate
         //obj -= Operation.Square;
         obj(5, 5);
         obj(8, 3);
+        obj = null;
     }
 }
 public class Operation

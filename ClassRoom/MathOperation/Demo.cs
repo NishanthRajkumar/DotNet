@@ -1,4 +1,4 @@
-﻿namespace MSTestApp;
+﻿namespace MathOperation;
 
 public class Demo
 {

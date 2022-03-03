@@ -1,2 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.Title = "Coffe maker test App";
+Console.WriteLine("==========Coffee maker==========");

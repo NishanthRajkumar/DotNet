@@ -23,8 +23,8 @@ public class MoodAnalyserFactory
             {
                 //double result1=100 / num;
 
-                Assembly executing = Assembly.GetExecutingAssembly();
-                Type moodAnalyseType = executing.GetType(className);
+                //Assembly executing = Assembly.GetExecutingAssembly();
+                Type moodAnalyseType = Type.GetType(className);
                 return Activator.CreateInstance(moodAnalyseType);
             }
             catch (ArgumentNullException)

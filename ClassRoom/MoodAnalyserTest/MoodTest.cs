@@ -11,7 +11,7 @@ public class MoodTest
     {
         string message = null;
         MoodAnalyser expected = new MoodAnalyser(message);
-        object obj = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyserApp.MoodAnalyserFactory", "MoodAnalyserFactory");
+        object obj = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyserApp.MoodAnalyser", "MoodAnalyser");
         //expected.Equals(obj);
         Assert.AreNotEqual(expected, obj);
     }

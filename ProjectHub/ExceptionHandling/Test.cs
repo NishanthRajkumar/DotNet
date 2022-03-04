@@ -15,9 +15,13 @@ internal static class Test
         {
             int num = Convert.ToInt32(txt);
         }
-        catch (Exception ex)
+        catch (OverflowException e)
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            Console.WriteLine("Inside 'Finally' block");
         }
     }
 }

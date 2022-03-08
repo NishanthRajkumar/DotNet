@@ -1,4 +1,4 @@
-﻿//Objcet obj = null;
+﻿/*//Objcet obj = null;
 long mem1 = GC.GetTotalMemory(false);//2 lakh
                                      //GC.SuppressFinalize(null);
 {
@@ -33,3 +33,7 @@ Console.WriteLine(bytes2 - bytes1);
 Console.WriteLine(bytes3);
 Console.WriteLine(bytes3 - bytes2);
 Console.ReadKey();
+*/
+
+
+GC.Collect();

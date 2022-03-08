@@ -15,31 +15,22 @@ internal class ProjectMain
         listPersonInCity.Add(new Person("203456884", "SAM", "126 Province Ave, Baltimore,NY", 95));
         // Console.WriteLine(listPersonInCity.ToString());
         // listPersonInCity.ForEach(x => Console.WriteLine("{0}\t",x.Name.ToString()));
-
     }
-
 
     // UC2
     public static void Retrieving_TopTwoRecord_ForAgels_LessThanSixty(List<Person> listPersonsInCity)
     {
         foreach (Person person in listPersonsInCity.FindAll(e => (e.Age < 60)).Take(2))
-        {
             Console.WriteLine("Name :" + person.Name + "\t\tAge: " + person.Age);
-        }
-
     }
-
 
     //UC3
     public static void CheckingForTeenagerPerson(List<Person> listPersonsInCity)
     {
         if (listPersonsInCity.Any(e => e.Age >= 13 && e.Age < 19))
-        {
             Console.WriteLine("Yes, we have some teen-agers in the list");
-        }
         else
             Console.WriteLine("No, we don't have teen-agers in the list");
-
     }
 
 
@@ -54,8 +45,6 @@ internal class ProjectMain
     public static void CheckNameExistOrNot(List<Person> listPersonInCity)
     {
         if (listPersonInCity.Exists(e => e.Name == "SAM"))
-        {
             Console.WriteLine("Yes, A person having name \"SAM\" exists in our list");
-        }
     }
 }

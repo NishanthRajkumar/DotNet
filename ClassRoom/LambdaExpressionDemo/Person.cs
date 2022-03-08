@@ -7,7 +7,6 @@ internal class Person
     public string Address;
     public int Age;
 
-
     public Person(string ssn, string name, string addr, int age)
     {
         SSN = ssn;
@@ -15,5 +14,4 @@ internal class Person
         Address = addr;
         Age = age;
     }
-
 }

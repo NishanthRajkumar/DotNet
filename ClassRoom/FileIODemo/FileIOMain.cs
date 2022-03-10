@@ -14,9 +14,7 @@ internal class FileIOMain
     public static void ReadAllLines()
     {
         String path = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example.txt";
-        String[] lines;
-        //C: \Users/inyadav\source\repos\Day20_FileIO\Day20_FileIO
-        lines = File.ReadAllLines(path);
+        var lines = File.ReadAllLines(path);
         Console.WriteLine(lines[0]);
         Console.WriteLine(lines[1]);
 
@@ -34,18 +32,16 @@ internal class FileIOMain
     public static void FileCopy()
     {
         String path = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example.txt";
-        String copypath = @"D:\Fellowship\Fellowship05-Day20_FileIO\Day20_FileIO\Example1.txt";
+        String copypath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example1.txt";
 
-        File.Copy(path, copypath);
-
+        File.Copy(path, copypath, true);
     }
 
     public static void DeleteFile()
     {
-        String path = @"D:\Fellowship\Fellowship05-Day20_FileIO\Day20_FileIO\Example1.txt";
+        String path = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example1.txt";
 
         File.Delete(path);
-
     }
 
     public static void ReadFromStreamReader()
@@ -56,11 +52,8 @@ internal class FileIOMain
         {
             String s = String.Empty;
             while ((s = sr.ReadLine()) != null)
-            {
                 Console.WriteLine(s);
-            }
         }
-
     }
 
     public static void WriteUsingStreamWriter()

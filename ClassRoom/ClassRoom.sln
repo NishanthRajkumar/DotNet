@@ -57,11 +57,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsDemo", "Collecti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaExpressionDemo", "LambdaExpressionDemo\LambdaExpressionDemo.csproj", "{C6837B80-D8EC-4AA6-8792-140755A6EB7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileIODemo", "FileIODemo\FileIODemo.csproj", "{D91297C8-C6E8-4223-A9CA-A09E937F0308}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileIODemo", "FileIODemo\FileIODemo.csproj", "{D91297C8-C6E8-4223-A9CA-A09E937F0308}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "File IO Demo", "File IO Demo", "{9DF44B4B-B8AE-4B79-AA94-A682A6E3A2DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationDemo", "SerializationDemo\SerializationDemo.csproj", "{5A4DCCB9-C8AF-46DD-861A-9B3DA4E0B882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerializationDemo", "SerializationDemo\SerializationDemo.csproj", "{5A4DCCB9-C8AF-46DD-861A-9B3DA4E0B882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVHelperAndJson", "CSVHelperAndJson\CSVHelperAndJson.csproj", "{1504129D-C204-451B-8F01-2E9F0F49746A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -161,6 +163,10 @@ Global
 		{5A4DCCB9-C8AF-46DD-861A-9B3DA4E0B882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A4DCCB9-C8AF-46DD-861A-9B3DA4E0B882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A4DCCB9-C8AF-46DD-861A-9B3DA4E0B882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1504129D-C204-451B-8F01-2E9F0F49746A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1504129D-C204-451B-8F01-2E9F0F49746A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1504129D-C204-451B-8F01-2E9F0F49746A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1504129D-C204-451B-8F01-2E9F0F49746A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

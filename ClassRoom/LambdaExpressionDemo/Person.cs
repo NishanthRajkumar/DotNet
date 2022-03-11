@@ -15,3 +15,11 @@ internal class Person
         Age = age;
     }
 }
+
+internal static class Newclass
+{
+    public static void GetInfo(this Person O)
+    {
+        Console.WriteLine("Entended method");
+    }
+}

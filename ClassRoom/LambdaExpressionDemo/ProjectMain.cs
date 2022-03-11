@@ -15,6 +15,8 @@ internal class ProjectMain
         listPersonInCity.Add(new Person("203456884", "SAM", "126 Province Ave, Baltimore,NY", 95));
         // Console.WriteLine(listPersonInCity.ToString());
         // listPersonInCity.ForEach(x => Console.WriteLine("{0}\t",x.Name.ToString()));
+        Person person = new("203456876", "John", "12 Main Street, Newyork,NY", 15);
+        person.GetInfo();
     }
 
     // UC2

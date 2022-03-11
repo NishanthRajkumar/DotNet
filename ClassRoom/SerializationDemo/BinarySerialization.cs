@@ -20,4 +20,3 @@ public class Demo
     public string ApplicationName { get; set; } = "Binary Serialize";
     public int ApplicationId { get; set; } = 1001;
 }
-

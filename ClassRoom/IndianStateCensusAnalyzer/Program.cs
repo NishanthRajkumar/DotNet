@@ -1,0 +1,1 @@
+﻿Console.Title = "Indian State Census Analyzer";

@@ -7,8 +7,8 @@ internal class CSVHandler
 {
     public static void ImplementCSVDataHandling()
     {
-        string importFilePath = @"D:\Fellowship\Fellowship05-Day21_ThirdPartyLibrary\Day21_CSVHelperAndJson\Day21_CSVHelperAndJson\Utility\Addresses.csv";
-        string exportFilePath = @"D:\Fellowship\Fellowship05-Day21_ThirdPartyLibrary\Day21_CSVHelperAndJson\Day21_CSVHelperAndJson\Utility\export.csv";
+        string importFilePath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\CSVHelperAndJson\AddressData.cs";
+        string exportFilePath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\CSVHelperAndJson\Export.cs";
 
         //reading csv file
         using (var reader = new StreamReader(importFilePath))
@@ -25,8 +25,6 @@ internal class CSVHandler
                 Console.Write("\t" + addressData.state);
                 Console.Write("\t" + addressData.code);
                 Console.WriteLine();
-
-
             }
             Console.WriteLine("**********************Reading fromcsv file and Write to csv file **************************");
             //Writing csv file
@@ -36,6 +34,7 @@ internal class CSVHandler
             {
                 csvExport.WriteRecords(records);
             }
+            Console.WriteLine("Succesfully read from csv and wrote to csv");
         }
     }
 

@@ -1,10 +1,14 @@
 ﻿namespace FileIODemo;
 
-internal class FileIOMain
+public class FileIOMain
 {
+    static String path = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example.txt";
+    static String copypath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example1.txt";
+
+
     public static void FileExists()
     {
-        String path = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example.txt";
+
         if (File.Exists(path))
             Console.WriteLine("File exists");
         else
@@ -13,16 +17,14 @@ internal class FileIOMain
 
     public static void ReadAllLines()
     {
-        String path = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example.txt";
         var lines = File.ReadAllLines(path);
         Console.WriteLine(lines[0]);
         Console.WriteLine(lines[1]);
-
+        Console.WriteLine(lines[4]);
     }
 
     public static void ReadAllText()
     {
-        String path = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example.txt";
         String lines;
         lines = File.ReadAllText(path);
         Console.WriteLine(lines);
@@ -31,28 +33,24 @@ internal class FileIOMain
 
     public static void FileCopy()
     {
-        String path = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example.txt";
-        String copypath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example1.txt";
-
         File.Copy(path, copypath, true);
     }
 
     public static void DeleteFile()
     {
         String path = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example1.txt";
-
         File.Delete(path);
     }
 
     public static void ReadFromStreamReader()
     {
         String path = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\FileIODemo\Example.txt";
-
         using (StreamReader sr = File.OpenText(path))
         {
             String s = String.Empty;
             while ((s = sr.ReadLine()) != null)
                 Console.WriteLine(s);
+            //sr.Close();
         }
     }
 
@@ -62,9 +60,19 @@ internal class FileIOMain
 
         using (StreamWriter sr = File.AppendText(path))
         {
-            sr.WriteLine("Hellow World - .Net is awesome1");
+            sr.WriteLine(@"\nSampada and Nishanth are testing Indal sir's code\n The end of app");
             sr.Close();
             Console.WriteLine(File.ReadAllText(path));
         }
+    }
+
+    public static void NormalWrite()
+    {
+        File.WriteAllText(path, "I want to add my new text line to Example.txt file");
+    }
+
+    public static void AppendText()
+    {
+        File.AppendAllText(path, "\nI want to Append my new text line to Example.txt file");
     }
 }

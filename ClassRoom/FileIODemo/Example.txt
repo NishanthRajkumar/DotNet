@@ -1,5 +1,1 @@
-﻿My first line
-random line 2
-Whatever line 3
-The end line
-Hellow World - .Net is awesome1
+I want to add my new text line to Example.txt fileI want to Append my new text line to Example.txt file

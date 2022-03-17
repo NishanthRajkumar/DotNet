@@ -5,11 +5,11 @@ namespace CSVHelperAndJson;
 
 internal class CSVHandler
 {
+    private static string importFilePath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\CSVHelperAndJson\AddressData.cs";
+    private static string exportFilePath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\CSVHelperAndJson\Export.cs";
+
     public static void ImplementCSVDataHandling()
     {
-        string importFilePath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\CSVHelperAndJson\AddressData.cs";
-        string exportFilePath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\CSVHelperAndJson\Export.cs";
-
         //reading csv file
         using (var reader = new StreamReader(importFilePath))
         using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
@@ -26,9 +26,9 @@ internal class CSVHandler
                 Console.Write("\t" + addressData.code);
                 Console.WriteLine();
             }
+
             Console.WriteLine("**********************Reading fromcsv file and Write to csv file **************************");
             //Writing csv file
-
             using (var writer = new StreamWriter(exportFilePath))
             using (var csvExport = new CsvWriter(writer, CultureInfo.InvariantCulture))
             {
@@ -37,5 +37,4 @@ internal class CSVHandler
             Console.WriteLine("Succesfully read from csv and wrote to csv");
         }
     }
-
 }

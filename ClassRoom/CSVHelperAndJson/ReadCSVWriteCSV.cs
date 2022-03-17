@@ -6,10 +6,10 @@ namespace CSVHelperAndJson;
 
 internal class ReadCSVWriteCSV
 {
+    private static string importFilePath = "C:\\Users\\inyadav\\source\\repos\\Day21_CSVHelperAndJson\\Day21_CSVHelperAndJson\\Utility\\Addresses.csv";
+    private static string exportFilePath = "C:\\Users\\inyadav\\source\\repos\\Day21_CSVHelperAndJson\\Day21_CSVHelperAndJson\\Utility\\export.csv";
     public static void ImplementCSVToJSON()
     {
-        string importFilePath = "C:\\Users\\inyadav\\source\\repos\\Day21_CSVHelperAndJson\\Day21_CSVHelperAndJson\\Utility\\Addresses.csv";
-        string exportFilePath = "C:\\Users\\inyadav\\source\\repos\\Day21_CSVHelperAndJson\\Day21_CSVHelperAndJson\\Utility\\export.csv";
         using (var reader = new StreamReader(importFilePath))
         using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
         {
@@ -23,10 +23,9 @@ internal class ReadCSVWriteCSV
                 Console.Write("\t" + addressData.city);
                 Console.Write("\t" + addressData.state);
                 Console.Write("\t" + addressData.code);
-
             }
-            Console.WriteLine("**********************Reading fromcsv file and Write to csv file **************************");
 
+            Console.WriteLine("**********************Reading fromcsv file and Write to csv file **************************");
             //Writing json file
             JsonSerializer serializer = new JsonSerializer();
             using (StreamWriter sw = new StreamWriter(exportFilePath))

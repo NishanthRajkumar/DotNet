@@ -6,10 +6,10 @@ namespace CSVHelperAndJson;
 
 internal class ReadCSV_And_WriteJSON
 {
+    private static string importFilePath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\CSVHelperAndJson\Utility\Addresses.csv";
+    private static string exportFilePath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\CSVHelperAndJson\export.json";
     public static void ImplementCSVToJSON()
     {
-        string importFilePath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\CSVHelperAndJson\Utility\Addresses.csv";
-        string exportFilePath = @"C:\Users\Nishanth\Desktop\codingclub\RFP\DotNet\ClassRoom\CSVHelperAndJson\export.json";
         using (var reader = new StreamReader(importFilePath))
         using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
         {
@@ -25,10 +25,9 @@ internal class ReadCSV_And_WriteJSON
                 Console.Write("\t" + addressData.code);
                 Console.WriteLine();
             }
+
             Console.WriteLine("**********************Reading from csv file and Write to csv file **************************");
-
             //Writing json file
-
             JsonSerializer serializer = new JsonSerializer();
             using (StreamWriter sw = new StreamWriter(exportFilePath))
             using (JsonWriter writer = new JsonTextWriter(sw))

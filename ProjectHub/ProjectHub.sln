@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesConcept", "Delegat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{3CB4D0FD-A24E-4C59-804E-785A855C4528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architecture", "Architecture\Architecture.csproj", "{CAE68ECD-DD91-437D-9EC1-8A9CF97D5101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture", "Architecture\Architecture.csproj", "{CAE68ECD-DD91-437D-9EC1-8A9CF97D5101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexersDemo", "IndexersDemo\IndexersDemo.csproj", "{4273B392-5920-49EA-BB81-DDC32AC2BA5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{CAE68ECD-DD91-437D-9EC1-8A9CF97D5101}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAE68ECD-DD91-437D-9EC1-8A9CF97D5101}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAE68ECD-DD91-437D-9EC1-8A9CF97D5101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4273B392-5920-49EA-BB81-DDC32AC2BA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4273B392-5920-49EA-BB81-DDC32AC2BA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4273B392-5920-49EA-BB81-DDC32AC2BA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4273B392-5920-49EA-BB81-DDC32AC2BA5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

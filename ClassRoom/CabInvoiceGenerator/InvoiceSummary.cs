@@ -2,9 +2,9 @@
 
 public class InvoiceSummary
 {
-    private int numberOfRides;
-    private double totalFare;
-    private double averageFare;
+    private readonly int numberOfRides;
+    private readonly double totalFare;
+    private readonly double averageFare;
     public InvoiceSummary(int numberOfRides, double totalFare)
     {
         this.numberOfRides = numberOfRides;
@@ -12,16 +12,18 @@ public class InvoiceSummary
         this.averageFare = this.totalFare / this.numberOfRides;
     }
 
-    public override bool Equals(object obj)
+    public override bool Equals(object? obj)
     {
-        if (obj == null) return false;
-        if (!(obj is InvoiceSummary)) return false;
+        if (obj == null)
+            return false;
+        if (obj is not InvoiceSummary)
+            return false;
         InvoiceSummary inputObject = (InvoiceSummary)obj;
-        return this.numberOfRides == inputObject.numberOfRides && this.totalFare == inputObject.totalFare && this.averageFare == inputObject.averageFare;
+        return numberOfRides == inputObject.numberOfRides && totalFare == inputObject.totalFare && averageFare == inputObject.averageFare;
     }
 
     public override int GetHashCode()
     {
-        return this.numberOfRides.GetHashCode() ^ this.totalFare.GetHashCode() ^ this.averageFare.GetHashCode();
+        return numberOfRides.GetHashCode() ^ totalFare.GetHashCode() ^ averageFare.GetHashCode();
     }
 }

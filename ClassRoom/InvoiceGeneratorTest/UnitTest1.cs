@@ -5,7 +5,7 @@ namespace InvoiceGeneratorTest;
 
 public class Tests
 {
-    InvoiceGenerator invoiceGenerator = null;
+    InvoiceGenerator? invoiceGenerator = null;
     [SetUp]
     public void Setup()
     {

@@ -11,10 +11,9 @@ public class CabInvoiceException : Exception
         INVALID_USER_ID
     }
 
-    ExceptionType type;
+    readonly ExceptionType type;
     public CabInvoiceException(ExceptionType type, string message) : base(message)
     {
         this.type = type;
     }
-
 }

@@ -2,22 +2,22 @@
 
 public class RideRepository
 {
-    Dictionary<string, List<Ride>> userRides = null;
+    readonly Dictionary<string, List<Ride>>? userRides = null;
 
     public RideRepository()
     {
-        this.userRides = new Dictionary<string, List<Ride>>();
+        userRides = new Dictionary<string, List<Ride>>();
     }
     public void AddRide(string userId, Ride[] rides)
     {
-        bool rideList = this.userRides.ContainsKey(userId);
+        bool rideList = userRides.ContainsKey(userId);
         try
         {
             if (!rideList)
             {
                 List<Ride> list = new List<Ride>();
                 list.AddRange(rides);
-                this.userRides.Add(userId, list);
+                userRides.Add(userId, list);
             }
         }
         catch (CabInvoiceException)
@@ -28,10 +28,9 @@ public class RideRepository
 
     public Ride[] getRides(string userId)
     {
-        bool rideList = this.userRides.ContainsKey(userId);
         try
         {
-            return this.userRides[userId].ToArray();
+            return userRides[userId].ToArray();
         }
         catch (Exception)
         {

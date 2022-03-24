@@ -77,7 +77,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CabInvoiceGenerator", "CabI
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cab Invoice Geberator App", "Cab Invoice Geberator App", "{7E9E1D45-0D9A-4699-AEF3-89A2D592CEF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceGeneratorTest", "InvoiceGeneratorTest\InvoiceGeneratorTest.csproj", "{62BE3E99-FC78-430C-9270-BA45248C5AE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceGeneratorTest", "InvoiceGeneratorTest\InvoiceGeneratorTest.csproj", "{62BE3E99-FC78-430C-9270-BA45248C5AE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Employee Payroll", "Employee Payroll", "{70770B07-4681-4754-B92B-0EC14F356265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePayrollService", "EmployeePayrollService\EmployeePayrollService.csproj", "{4F47AA13-14C0-4C90-81E2-B45C08EA73E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePayrollTest", "EmployeePayrollTest\EmployeePayrollTest.csproj", "{43318A89-4FFF-4DD4-A919-B399A490C19E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +207,14 @@ Global
 		{62BE3E99-FC78-430C-9270-BA45248C5AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62BE3E99-FC78-430C-9270-BA45248C5AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62BE3E99-FC78-430C-9270-BA45248C5AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F47AA13-14C0-4C90-81E2-B45C08EA73E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F47AA13-14C0-4C90-81E2-B45C08EA73E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F47AA13-14C0-4C90-81E2-B45C08EA73E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F47AA13-14C0-4C90-81E2-B45C08EA73E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43318A89-4FFF-4DD4-A919-B399A490C19E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43318A89-4FFF-4DD4-A919-B399A490C19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43318A89-4FFF-4DD4-A919-B399A490C19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43318A89-4FFF-4DD4-A919-B399A490C19E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -232,6 +246,8 @@ Global
 		{5F5CC0A0-3915-4620-9B0C-F8EAB1217280} = {9DF44B4B-B8AE-4B79-AA94-A682A6E3A2DE}
 		{7E1B91E6-49D4-4CC4-94A5-E9DC16FF1D85} = {7E9E1D45-0D9A-4699-AEF3-89A2D592CEF5}
 		{62BE3E99-FC78-430C-9270-BA45248C5AE5} = {7E9E1D45-0D9A-4699-AEF3-89A2D592CEF5}
+		{4F47AA13-14C0-4C90-81E2-B45C08EA73E7} = {70770B07-4681-4754-B92B-0EC14F356265}
+		{43318A89-4FFF-4DD4-A919-B399A490C19E} = {70770B07-4681-4754-B92B-0EC14F356265}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81FC3C4E-0E87-412B-B999-8CDDEE39E0B0}

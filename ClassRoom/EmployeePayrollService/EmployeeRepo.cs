@@ -4,7 +4,7 @@ namespace EmployeePayrollService;
 
 public class EmployeeRepo
 {
-    const string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=payroll_service;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"; //"Data Source=(localdb)\ProjectsV13;Initial Catalog=payroll_service;Integrated Security=True";
+    const string connectionString = @"Data Source=(localdb)\ProjectModels;Initial Catalog=payroll_service;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
     readonly SqlConnection connection = new(connectionString);
     public bool GetAllEmployee()
     {
@@ -22,20 +22,18 @@ public class EmployeeRepo
                     while (dr.Read())
                     {
                         //employeeModel.EmployeeID = dr.GetInt32(0);
-                        employeeModel.EmployeeID = dr.GetInt32(0);
-                        employeeModel.EmployeeName = dr.GetString(1);
-                        employeeModel.PhoneNumber = dr.GetString(2);
-                        employeeModel.Address = dr.GetString(3);
-                        employeeModel.BasicPay = dr.GetDecimal(6);
-                        employeeModel.StartDate = dr.GetDateTime(11);
-                        employeeModel.Gender = Convert.ToChar(dr.GetString(5));
-                        //employeeModel.PhoneNumber = dr.GetString(4);
-
-                        employeeModel.Department = dr.GetString(4);
-                        //employeeModel.Deductions = dr.GetDouble(7);
-                        //employeeModel.TaxablePay = dr.GetDouble(8);
-                        //employeeModel.Tax = dr.GetDouble(9);
-                        //employeeModel.NetPay = dr.GetDouble(10);
+                        employeeModel.EmployeeID = Convert.ToInt32(dr["id"]);
+                        employeeModel.EmployeeName = Convert.ToString(dr["name"]);
+                        employeeModel.PhoneNumber = Convert.ToString(dr["phone"]);
+                        employeeModel.Address = Convert.ToString(dr["address"]);
+                        employeeModel.BasicPay = Convert.ToInt32(dr["basic_pay"]);
+                        employeeModel.StartDate = Convert.ToDateTime(dr["start_date"]);
+                        employeeModel.Gender = Convert.ToChar(dr["gender"]);
+                        employeeModel.Department = Convert.ToString(dr["department"]);
+                        employeeModel.Deductions = Convert.ToDouble(dr["deduction"]);
+                        employeeModel.TaxablePay = Convert.ToDouble(dr["taxable_pay"]);
+                        employeeModel.Tax = Convert.ToDouble(dr["income_tax"]);
+                        employeeModel.NetPay = Convert.ToDouble(dr["net_pay"]);
                         System.Console.WriteLine(employeeModel.EmployeeName + " " + employeeModel.BasicPay + " " + employeeModel.StartDate + " " + employeeModel.Gender + " " + employeeModel.PhoneNumber + " " + employeeModel.Address + " " + employeeModel.Department + " " + employeeModel.Deductions + " " + employeeModel.TaxablePay + " " + employeeModel.Tax + " " + employeeModel.NetPay);
                         System.Console.WriteLine("\n");
                     }
